@@ -11,22 +11,26 @@ body {
 header {
     background-image: url(1.jpg);
     background-repeat: no-repeat;
-    padding: 1%;
+        padding: 1%;
     margin: auto;
     height: 40%;
 }
 
-h1 {
+h1 { display: flex;
     color: white;
     padding-left: 5%;
     font-weight: bold;
 }
-
-.navbar{
+.line {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.navbar{
     padding-right: 5%;
+    display: flex;
+    flex-direction: row;
 }
 .navbar  a {
     display: flex;
@@ -43,13 +47,13 @@ header p {
     color: white;
     font-size: 350%;
     text-align: center;
-    padding-top: 10%;
+    padding: auto 5%;
     text-shadow: 1px 1px 20px black;
 }
 
-button {
+header button {
     display: block;
-    margin: auto;
+    margin: 5% auto;
     background-color: #f25a29;
     border: none;
     border-radius: 40px;
@@ -60,6 +64,7 @@ button {
     font-size: 130%;
     text-align: center;
     filter: drop-shadow(5px 5px 10px #27233c);
+    cursor: pointer;
 }
 .service {
     background-color: white;
@@ -71,26 +76,42 @@ h2{
     text-align: center;
     padding-top: 2%;
     font-weight: bolder;
-
 }
 .table {
     display: flex;
+    flex-direction: row;
+
+
 }
 .col h3{
+
     padding-top: 1%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.col p{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .col {
     margin: auto;
-    flex-basis: 20em;
-    text-align:center;
-    padding-bottom: 2%;
-    justify-content: space-around;
+    flex-basis: 15em;
+    padding-bottom:2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+.
 }
+
 .col img {
     width: 25%;
     padding-top: 5%;
+    display: flex;
+
 }
 .ab {
     background-color: #f5f5f5;
@@ -147,7 +168,9 @@ footer {
     max-width: 10em;
     padding: 1%;
 }
-
+.signature {
+    max-width: 7em;
+}
 h5 {
     color: #f25a29;
 }
@@ -161,4 +184,23 @@ h5 {
     flex-direction: row;
     align-items: center;
     text-align: left;
+}
+.cartext {
+    padding: 5% 5% 5% 5%;
+}
+
+.career button {
+    display: block;
+    margin: 5% auto;
+    background-color: #f25a29;
+    border: none;
+    border-radius: 40px;
+    height: 75px;
+    width: 200px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 130%;
+    text-align: center;
+    filter: drop-shadow(5px 5px 10px #27233c);
+    cursor: pointer;
 }
