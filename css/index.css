@@ -8,10 +8,11 @@ body {
     flex-direction: column;
 }
 
+
 header {
     background-image: url(1.jpg);
     background-repeat: no-repeat;
-        padding: 1%;
+    padding: 1%;
     margin: auto;
     height: 40%;
 }
@@ -137,6 +138,12 @@ footer {
     background-color: #4a4a4a;
     width: 85%;
     margin: auto;
+}
+address a{
+    color: #f25a29;
+    text-decoration: none;
+    font-style: normal;
+
 }
 
 .content {
